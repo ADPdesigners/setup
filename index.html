@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logitech G Pro X Superlight 2 · Ficha rápida</title>
+    <title>Lo que sale en mis vídeos · Setup</title>
+    <meta name="description" content="Los periféricos gaming que salen en mis clips de Valorant, con su precio en Amazon.">
     <style>
         :root {
             --bg-color: #0d1117;
             --card-bg: #161b22;
             --accent-cyan: #00f0ff;
-            --accent-amber: #ff9900;
             --text-main: #f0f6fc;
             --text-muted: #8b949e;
         }
@@ -18,22 +18,24 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-main);
-            display: flex;
-            align-items: center;
-            justify-content: center;
             min-height: 100vh;
-            padding: 16px;
+            padding: 24px 16px 40px;
         }
-        .container {
-            max-width: 440px;
-            width: 100%;
+        main { max-width: 440px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 20px; }
+        header h1 { font-size: 18px; font-weight: 800; }
+        header p { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
+        .card {
             background: var(--card-bg);
             border: 1px solid #30363d;
             border-radius: 16px;
-            padding: 32px 24px;
-            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
+            padding: 24px 20px;
+            margin-bottom: 16px;
             text-align: center;
+            scroll-margin-top: 16px;
         }
+        .card.latest { padding: 32px 24px; box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6); border-color: rgba(0, 240, 255, 0.45); }
+        .card:target { border-color: var(--accent-cyan); }
         .badge {
             display: inline-block;
             background: rgba(0, 240, 255, 0.1);
@@ -45,17 +47,18 @@
             font-weight: 700;
             letter-spacing: 1px;
             text-transform: uppercase;
-            margin-bottom: 16px;
+            margin-bottom: 14px;
         }
-        h1 { font-size: 22px; font-weight: 800; line-height: 1.3; margin-bottom: 12px; }
-        h1 span { color: var(--accent-cyan); }
-        p.subtitle { font-size: 14px; color: var(--text-muted); margin-bottom: 24px; line-height: 1.5; }
+        h2 { font-size: 21px; font-weight: 800; line-height: 1.3; margin-bottom: 10px; }
+        .card:not(.latest) h2 { font-size: 17px; }
+        h2 span { color: var(--accent-cyan); }
+        p.subtitle { font-size: 14px; color: var(--text-muted); margin-bottom: 18px; line-height: 1.5; }
         .benefits {
             text-align: left;
             background: rgba(255, 255, 255, 0.03);
             border-radius: 8px;
             padding: 12px 16px;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
             font-size: 13px;
             color: #c9d1d9;
         }
@@ -74,31 +77,32 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
+        .card:not(.latest) .btn-amazon { font-size: 14px; padding: 12px; }
         .btn-amazon:active { transform: translateY(1px); }
-        .note { margin-top: 10px; font-size: 12px; color: var(--text-muted); }
-        .disclaimer { margin-top: 24px; font-size: 11px; color: #6e7681; line-height: 1.4; }
+        h3 { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin: 28px 0 12px; text-align: center; }
+        .note { margin-top: 10px; font-size: 12px; color: var(--text-muted); text-align: center; }
+        .disclaimer { margin-top: 24px; font-size: 11px; color: #6e7681; line-height: 1.4; text-align: center; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="badge">El ratón del vídeo</div>
-        <h1>Logitech G Pro X <span>Superlight 2</span></h1>
-        <p class="subtitle">Lo que importa para frenar la mira donde quieres:</p>
-        <ul class="benefits">
-            <li>🪶 60 gramos: arranca y frena sin inercia.</li>
-            <li>🎯 Sensor HERO 2, sin aceleración.</li>
-            <li>🔋 Inalámbrico LIGHTSPEED, carga USB-C.</li>
-        </ul>
-        <a class="btn-amazon" id="amazon-link" href="https://www.amazon.es/dp/B07W5JKP66?tag=esportsaimgea-21" rel="sponsored nofollow noopener">Ver precio en Amazon</a>
+    <main>
+        <header>
+            <h1>Lo que sale en mis vídeos</h1>
+            <p>Clips de Valorant y el equipo que hay detrás</p>
+        </header>
+        <section class="card latest" id="superlight2">
+            <div class="badge">Ratón del último vídeo</div>
+            <h2>Logitech G Pro X <span>Superlight 2</span></h2>
+            <p class="subtitle">Lo que importa para frenar la mira donde quieres:</p>
+            <ul class="benefits">
+                <li>🪶 60 gramos: arranca y frena sin inercia.</li>
+                <li>🎯 Sensor HERO 2, sin aceleración.</li>
+                <li>🔋 Inalámbrico LIGHTSPEED, carga USB-C.</li>
+            </ul>
+            <a class="btn-amazon" href="https://www.amazon.es/dp/B07W5JKP66?tag=esportsaimgea-21" rel="sponsored nofollow noopener">Ver precio en Amazon</a>
+        </section>
         <p class="note">El precio y la disponibilidad los fija Amazon y pueden cambiar.</p>
-        <p class="disclaimer">En calidad de Afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos aplicables.<br>El jugador que aparece en los clips no patrocina ni respalda este producto ni esta página.</p>
-    </div>
-    <script>
-        // ?asin=XXXX permite reutilizar la página para otro producto sin regenerarla
-        const asin = new URLSearchParams(window.location.search).get('asin');
-        if (asin && /^[A-Z0-9]{10}$/.test(asin)) {
-            document.getElementById('amazon-link').href = 'https://www.amazon.es/dp/' + asin + '?tag=esportsaimgea-21';
-        }
-    </script>
+        <p class="disclaimer">En calidad de Afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos aplicables.<br>Los jugadores que aparecen en los clips no patrocinan ni respaldan estos productos ni esta página.</p>
+    </main>
 </body>
 </html>
