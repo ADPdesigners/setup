@@ -104,5 +104,13 @@
         <p class="note">El precio y la disponibilidad los fija Amazon y pueden cambiar.</p>
         <p class="disclaimer">En calidad de Afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos aplicables.<br>Los jugadores que aparecen en los clips no patrocinan ni respaldan estos productos ni esta página.</p>
     </main>
+    <script>
+    (function () { var ids = {"ig": "esportsaimgea-ig-21", "tt": "esportsaimgea-tt-21", "pin": "esportsaimgea-pin-21"};
+      var src = new URLSearchParams(location.search).get('src'); var tag = ids[src];
+      if (!tag) return;
+      document.querySelectorAll('a.btn-amazon').forEach(function (a) {
+        var u = new URL(a.href); u.searchParams.set('tag', tag); a.href = u.toString(); });
+    })();
+    </script>
 </body>
 </html>
